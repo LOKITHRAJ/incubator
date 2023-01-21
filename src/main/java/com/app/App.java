@@ -14,7 +14,6 @@ public class App {
     public static void main(String[] args) throws IOException {
 
        int[]  a = {3,2,-2,7,5,7};
-
        int max =  0;
        int max2nd = 0;
 
