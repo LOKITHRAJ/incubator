@@ -105,7 +105,7 @@ public class Runner {
         JsonSchema jsonSchema = factory.getSchema(
                 Runner.class.getResourceAsStream("config-schema.json"));
         JsonNode jsonNode = mapper.readTree(
-                Runner.class.getResourceAsStream("config.json"));
+                Runner.class.getResourceAsStream("extract.json"));
         Set<ValidationMessage> errors = jsonSchema.validate(jsonNode);
         System.out.println(errors);*/
     }
@@ -115,7 +115,7 @@ public class Runner {
         Configuration config = new Configuration();
 
         try {
-            mapper.writeValue(new File("config.json"), config);
+            mapper.writeValue(new File("extract.json"), config);
             String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(config);
             System.out.println(jsonString);
         } catch (Exception e) {
