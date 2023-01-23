@@ -5,55 +5,5 @@ Reference:
 
 Extractor Config:
 
-{
-    "name": "appDataConfig",
-    "version": "1.0",
-    "templateName": "appdata.xlsx",
-    "executionType": "PARALLEL",
-    "tasks": [
-        {
-            "name": "appData",
-            "priority": null,
-            "taskType": "REST_API",
-            "requestUrl": "https://dummyjson.com/products",
-            "responseMapping": {
-                "responsePayload": null,
-                "extractType": "EXCEL",
-                "excelExtraction": null
-            },
-            "status": {
-                "state": null,
-                "code": null,
-                "statusMessage": {},
-                "valid": false
-            }
-        },
-        {
-            "name": "appProfile",
-            "priority": null,
-            "taskType": "REST_API",
-            "requestUrl": "https://dummyjson.com/products",
-            "responseMapping": {
-                "responsePayload": null,
-                "extractType": "EXCEL",
-                "excelExtraction": null
-            },
-            "status": {
-                "state": null,
-                "code": null,
-                "statusMessage": {},
-                "valid": false
-            }
-        }
-    ],
-    "status": {
-        "state": null,
-        "code": null,
-        "statusMessage": {},
-        "valid": false
-    }
-}
 
-
-
-
+![Screenshot 2023-01-23 at 2 50 16 PM](https://user-images.githubusercontent.com/9805877/214004316-9fe12bd9-8039-419a-80a6-be3b0af39ddb.png)
